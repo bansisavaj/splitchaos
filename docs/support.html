@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SplitChaos | Support & Info</title>
+  <title>SplitChaos Support</title>
   <style>
     :root {
       color-scheme: dark;
@@ -17,32 +17,28 @@
       --border: rgba(255, 255, 255, 0.09);
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top, rgba(255, 77, 125, 0.18), transparent 30%),
+        radial-gradient(circle at top, rgba(255, 77, 125, 0.16), transparent 28%),
         linear-gradient(180deg, #101018 0%, #0b0b0f 42%, #08080b 100%);
     }
     a { color: #ff89a8; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap {
-      max-width: 1040px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 28px 20px 40px;
     }
     .hero {
-      display: grid;
-      gap: 18px;
-      padding: 8px 0 24px;
+      padding: 10px 0 18px;
     }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      width: fit-content;
       padding: 8px 12px;
       border-radius: 999px;
       background: rgba(255, 77, 125, 0.12);
@@ -51,21 +47,21 @@
       font-weight: 700;
       letter-spacing: 0.02em;
     }
-    h1, h2, h3 { margin: 0; line-height: 1.15; }
-    h1 { font-size: clamp(34px, 5vw, 56px); }
+    h1, h2 { margin: 0; line-height: 1.15; }
+    h1 { font-size: clamp(34px, 5vw, 54px); margin-top: 14px; }
     h2 { font-size: 24px; margin-bottom: 12px; }
-    h3 { font-size: 18px; margin-bottom: 8px; }
-    p { margin: 0 0 14px; color: var(--text); line-height: 1.65; }
+    p { margin: 0 0 14px; line-height: 1.65; }
     .muted { color: var(--muted); }
     .topcopy {
-      max-width: 720px;
-      font-size: 17px;
+      max-width: 700px;
       color: var(--muted);
+      font-size: 17px;
     }
     .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 16px;
     }
     .pill {
       display: inline-flex;
@@ -84,40 +80,12 @@
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       color: #fff;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 16px;
-    }
     .card {
       border: 1px solid var(--border);
       border-radius: 22px;
       padding: 20px;
       background: linear-gradient(180deg, var(--panel), var(--panel-2));
       box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
-    }
-    .span-7 { grid-column: span 7; }
-    .span-5 { grid-column: span 5; }
-    .span-6 { grid-column: span 6; }
-    .span-12 { grid-column: span 12; }
-    .mini-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 18px;
-    }
-    .mini {
-      padding: 14px;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-    }
-    .mini strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--accent);
-    }
-    .section {
       margin-top: 16px;
     }
     .bullets {
@@ -132,11 +100,6 @@
       border-radius: 14px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border);
-    }
-    .legal-columns {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
     }
     label {
       display: block;
@@ -169,38 +132,36 @@
       font-weight: 700;
       cursor: pointer;
     }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .span-7 { grid-column: span 7; }
+    .span-5 { grid-column: span 5; }
+    .span-12 { grid-column: span 12; }
     .footer {
       margin-top: 18px;
       color: var(--muted);
       font-size: 14px;
     }
-    .anchor-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 8px;
-    }
-    @media (max-width: 860px) {
-      .span-7, .span-5, .span-6 { grid-column: span 12; }
-      .legal-columns, .mini-grid { grid-template-columns: 1fr; }
+    @media (max-width: 800px) {
+      .span-7, .span-5 { grid-column: span 12; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="hero">
-      <span class="eyebrow">SplitChaos • Support, Privacy & Terms</span>
-      <div>
-        <h1>Party bill splitting, with less chaos.</h1>
-        <p class="topcopy">
-          SplitChaos helps friends, flatmates, and travel groups track shared expenses in real time,
-          send invites, settle balances, and keep the vibe playful with fun reminders and chaos games.
-        </p>
-      </div>
+      <span class="eyebrow">SplitChaos • Support</span>
+      <h1>Party bill splitting, with less chaos.</h1>
+      <p class="topcopy">
+        SplitChaos helps friends, flatmates, and travel groups create shared bills, split expenses,
+        and keep track of who owes what in a simple, playful way.
+      </p>
       <div class="actions">
         <a class="pill primary" href="#support">Contact Support</a>
-        <a class="pill" href="#privacy">Privacy Policy</a>
-        <a class="pill" href="#terms">Terms of Use</a>
+        <a class="pill" href="#contact">Contact Us</a>
         <a class="pill" href="#about">About the App</a>
       </div>
     </div>
@@ -208,109 +169,38 @@
     <div class="grid">
       <section id="about" class="card span-7">
         <h2>About SplitChaos</h2>
-        <p>
-          SplitChaos is a social expense app built with Firebase. It lets groups create shared bills,
-          split expenses, assign roles for fun, and see updates across devices.
+        <p class="muted">
+          Built for groups, trips, and everyday shared spending, SplitChaos keeps expense tracking easy,
+          real-time, and a little more fun than the usual bill-splitting app.
         </p>
         <ul class="bullets">
-          <li>Real-time group and expense sync</li>
-          <li>Invite codes and QR sharing</li>
-          <li>Settlement tracking with friendly summaries</li>
-          <li>Local reminders, notifications, and playful mini-games</li>
+          <li>Create or join groups with invite codes or QR</li>
+          <li>Add bills and see balances update across devices</li>
+          <li>Use playful summaries and chaos-style touches</li>
         </ul>
-        <div class="mini-grid">
-          <div class="mini"><strong>Groups</strong>Create shared expense spaces.</div>
-          <div class="mini"><strong>Balance</strong>See who owes what at a glance.</div>
-          <div class="mini"><strong>Fun</strong>Keep the whole thing light and social.</div>
-        </div>
       </section>
 
-      <aside class="card span-5">
-        <h2>Quick Contact</h2>
+      <aside id="contact" class="card span-5">
+        <h2>Contact</h2>
         <p><strong>Email:</strong> <a href="mailto:bansisavaj121@gmail.com">bansisavaj121@gmail.com</a></p>
-        <p><strong>Mobile:</strong> Add your preferred support number here if you want it public.</p>
-        <p><strong>Support:</strong> This page opens your email app with the details filled in.</p>
-        <div class="footer">
-          Last updated: June 23, 2026
-        </div>
+        <p><strong>Support:</strong> Use the form below to open your mail app with details filled in.</p>
+        <div class="footer">Last updated: June 24, 2026</div>
       </aside>
     </div>
 
-    <div class="grid section">
-      <section id="privacy" class="card span-6">
-        <h2>Privacy Policy</h2>
-        <p>
-          SplitChaos uses Firebase Authentication, Firestore, push notifications, analytics, and crash
-          reporting to provide the app experience.
-        </p>
-        <div class="legal-columns">
-          <div>
-            <h3>We collect</h3>
-            <ul class="bullets">
-              <li>Account IDs and profile names</li>
-              <li>Groups, expenses, balances, invite codes</li>
-              <li>Device tokens, analytics, and crash data</li>
-            </ul>
-          </div>
-          <div>
-            <h3>We use data for</h3>
-            <ul class="bullets">
-              <li>Real-time syncing and invites</li>
-              <li>Notifications and reminders</li>
-              <li>Bug fixes, diagnostics, and app improvement</li>
-            </ul>
-          </div>
-        </div>
-        <p class="muted" style="margin-top:14px;">
-          We do not sell your personal information. Group data is shared only with people inside the group.
-          For the full policy, you can still keep a separate privacy page if needed.
-        </p>
-      </section>
-
-      <section id="terms" class="card span-6">
-        <h2>Terms of Use</h2>
-        <p>
-          By using SplitChaos, you agree to use the app respectfully and lawfully. You are responsible for
-          the data you add and who you share it with.
-        </p>
-        <ul class="bullets">
-          <li>Do not misuse invite codes or try to access other groups.</li>
-          <li>Do not upload harmful, illegal, or abusive content.</li>
-          <li>We may update or change app features over time.</li>
-        </ul>
-        <p class="muted" style="margin-top:14px;">
-          SplitChaos is a convenience tool for informal expense tracking. Settlement results depend on the
-          information entered by users.
-        </p>
-      </section>
-    </div>
-
-    <section id="support" class="card section">
-      <h2>Contact & Support</h2>
-      <p class="muted">Fill in the form below and your mail app will open with the message ready to send.</p>
+    <section id="support" class="card">
+      <h2>Support</h2>
+      <p class="muted">Send us a quick note and your email app will open ready to send.</p>
 
       <form id="supportForm">
-        <div class="legal-columns">
-          <div>
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" placeholder="Optional" />
-          </div>
-          <div>
-            <label for="email">Your email</label>
-            <input id="email" name="email" type="email" placeholder="Optional" />
-          </div>
-        </div>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Optional" />
 
-        <div class="legal-columns">
-          <div>
-            <label for="phone">Mobile number</label>
-            <input id="phone" name="phone" type="tel" placeholder="Optional" />
-          </div>
-          <div>
-            <label for="topic">Topic</label>
-            <input id="topic" name="topic" type="text" placeholder="Bug report, feedback, account help..." />
-          </div>
-        </div>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" placeholder="Optional" />
+
+        <label for="phone">Mobile number</label>
+        <input id="phone" name="phone" type="tel" placeholder="Optional" />
 
         <label for="message">Description</label>
         <textarea id="message" name="message" placeholder="Tell us what happened or what you need help with..."></textarea>
@@ -318,18 +208,6 @@
         <button type="submit">Send support email</button>
       </form>
     </section>
-
-    <div class="card section">
-      <h2>Direct Links</h2>
-      <div class="actions">
-        <a class="pill" href="mailto:bansisavaj121@gmail.com">Email Support</a>
-        <a class="pill" href="https://bansisavaj.github.io/privacy.html">Privacy Policy</a>
-        <a class="pill" href="https://bansisavaj.github.io/terms.html">Terms of Use</a>
-      </div>
-      <p class="footer">
-        If you want, this page can replace the separate legal pages for a more polished App Store web presence.
-      </p>
-    </div>
   </div>
 
   <script>
@@ -339,15 +217,13 @@
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
-      const topic = document.getElementById('topic').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      const subject = encodeURIComponent(`SplitChaos Support${topic ? ` - ${topic}` : ''}`);
+      const subject = encodeURIComponent('SplitChaos Support');
       const body = encodeURIComponent(
         `${name ? `Name: ${name}\n` : ''}` +
         `${email ? `Email: ${email}\n` : ''}` +
         `${phone ? `Mobile: ${phone}\n` : ''}` +
-        `${topic ? `Topic: ${topic}\n` : ''}` +
         `\n${message || 'No message entered.'}`
       );
 
