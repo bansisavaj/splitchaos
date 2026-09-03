@@ -5,58 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SplitChaos Terms of Use</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 32px 20px; color: #111; background: #fff; }
-    h1, h2 { line-height: 1.2; }
-    h1 { margin-bottom: 0.2rem; }
-    .muted { color: #666; }
-    a { color: #0b63ce; }
+    :root { color-scheme: dark; --bg: #08080b; --surface: #121217; --text: #f5f5f7; --muted: #a2a2af; --accent: #ff4d7d; --border: rgba(255,255,255,.11); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; color: var(--text); background: var(--bg); }
+    a { color: #ff89a8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-header { max-width: 820px; margin: 0 auto; padding: 24px 20px 18px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .brand { color: var(--text); font-size: 20px; font-weight: 800; letter-spacing: 0; }
+    .brand span { color: var(--accent); }
+    nav { display: flex; gap: 16px; font-size: 14px; }
+    nav a { color: var(--muted); }
+    nav a[aria-current="page"] { color: var(--accent); }
+    main { max-width: 820px; margin: 0 auto; padding: 44px 20px 56px; }
+    h1, h2 { line-height: 1.2; letter-spacing: 0; }
+    h1 { margin: 0; font-size: 40px; }
+    h2 { margin: 42px 0 12px; padding-top: 26px; border-top: 1px solid var(--border); font-size: 23px; }
+    p { margin: 0 0 16px; color: #dedee5; }
+    .muted { margin-top: 10px; color: var(--muted); font-size: 14px; }
+    ul { margin: 0 0 16px; padding-left: 22px; color: #dedee5; }
+    li + li { margin-top: 8px; }
+    .footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    @media (max-width: 520px) { .site-header { padding-top: 18px; } h1 { font-size: 34px; } nav { gap: 12px; font-size: 13px; } main { padding-top: 34px; } }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="support.html">Split<span>Chaos</span></a>
+    <nav aria-label="Legal pages">
+      <a href="privacy.html">Privacy</a>
+      <a aria-current="page" href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+  <main>
   <h1>SplitChaos Terms of Use</h1>
-  <p class="muted">Last updated: June 23, 2026</p>
+  <p class="muted">Effective date: 3 September 2026</p>
 
   <p>
-    These Terms govern your use of SplitChaos. By using the app, you agree to these Terms and to use the
-    service in a respectful, lawful way.
+    These Terms of Use govern your use of SplitChaos. By downloading, accessing, or using the app, you agree
+    to these Terms and the <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use SplitChaos.
   </p>
 
-  <h2>Service</h2>
+  <h2>What SplitChaos Does</h2>
   <p>
-    SplitChaos helps users create shared expense groups, record bills, calculate settlements, and send
-    notifications. Some features depend on Firebase, Apple services, or device permissions.
+    SplitChaos helps people create shared groups, record expenses, calculate suggested balances, record
+    settlement entries, attach receipts, and receive optional notifications and reminders. It is an informal
+    record-keeping tool only. SplitChaos does not move money, hold funds, verify transactions, provide financial
+    advice, or act as a bank or payment service.
   </p>
 
-  <h2>Your Content</h2>
+  <h2>Eligibility and Accounts</h2>
   <p>
-    You are responsible for the accuracy of the names, expenses, invite codes, and other content you add.
-    You should only share group data with people who are meant to be in that group.
+    You must be at least 13 years old to use SplitChaos. You may use a guest account or sign in with Apple or
+    Google. You are responsible for keeping your device and account access secure and for activity that occurs
+    through your account.
+  </p>
+
+  <h2>Your Content and Shared Groups</h2>
+  <p>
+    You are responsible for the accuracy and lawfulness of the names, expenses, receipts, settlement records,
+    invite codes, and other content you add. Only invite people who are intended to have access to the group.
+    Group content is shared with all current group members.
+  </p>
+  <p>
+    SplitChaos is designed for collaborative groups. Any group member may be able to rename the group, change
+    settings, invite or remove members, edit shared information, or delete the group. Before joining a group,
+    make sure you trust its members. Do not add sensitive personal, financial, health, identity, or confidential
+    information to expenses, group names, notes, or receipt images.
   </p>
 
   <h2>Acceptable Use</h2>
   <ul>
     <li>Do not misuse invite codes or attempt to access groups you are not part of.</li>
     <li>Do not upload harmful, illegal, or abusive content.</li>
-    <li>Do not try to interfere with the app, its data, or other users.</li>
+    <li>Do not impersonate others, harass users, or use the app to deceive anyone about a payment or balance.</li>
+    <li>Do not interfere with the app, its data, other users, or its security controls.</li>
+    <li>Do not use automated means to scrape, overload, reverse engineer, or disrupt the service except where law permits.</li>
   </ul>
+
+  <h2>Receipts and Notifications</h2>
+  <p>
+    Receipt images are optional. By attaching one, you confirm that you have the right to share it with the group.
+    Notification delivery depends on your device settings, network connection, Apple Push Notification service, and
+    Firebase Cloud Messaging. Notifications may be delayed, unavailable, or not delivered. You can turn them off at
+    any time.
+  </p>
 
   <h2>Third-Party Services</h2>
   <p>
-    SplitChaos uses third-party services such as Firebase and Apple frameworks. Their services may be
-    subject to separate terms and policies.
+    SplitChaos uses third-party services including Firebase, Apple Sign In, Google Sign-In, Apple Push Notification
+    service, and the App Store. Your use of those services may be subject to their separate terms and policies.
   </p>
 
-  <h2>Availability</h2>
+  <h2>Changes, Availability, and Ending Access</h2>
   <p>
-    We may update, change, or discontinue features at any time. The app may also stop working properly if
-    network access, Firebase, or Apple services are unavailable.
+    We may update, change, suspend, or discontinue features at any time. We may restrict or end access where
+    reasonably necessary to protect the app, users, or comply with law. The app may be unavailable due to network,
+    device, Firebase, Apple, Google, or other service-provider issues.
   </p>
 
   <h2>Disclaimer</h2>
   <p>
-    SplitChaos is provided as a convenience tool for informal expense tracking. Settlement results are
-    based on the data entered by users.
+    SplitChaos is provided on an "as is" and "as available" basis. To the extent permitted by law, we do not make
+    warranties about accuracy, reliability, availability, or fitness for a particular purpose. Settlement results
+    are calculated from user-entered data and should be checked by the people involved before money changes hands.
   </p>
 
+  <h2>Limitation of Liability</h2>
+  <p>
+    To the extent permitted by law, SplitChaos and its developer are not liable for indirect, incidental, special,
+    consequential, or punitive damages, or for losses arising from inaccurate entries, group-member actions,
+    missed notifications, unavailable services, lost receipt images, or decisions made using the app. Nothing in
+    these Terms excludes liability that cannot be excluded under applicable law.
+  </p>
+
+  <h2>Changes to These Terms</h2>
+  <p>
+    We may update these Terms as the app changes. The updated version will be posted here with a new effective date.
+    Continued use after an update means you accept the updated Terms.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about these Terms can be sent to
+    <a href="mailto:bansisavaj121@gmail.com">bansisavaj121@gmail.com</a>.
+  </p>
+  <p class="footer">SplitChaos &middot; Terms of Use</p>
+  </main>
 </body>
 </html>
